@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="category-container">
+        <h1>Pilih Kategori Quiz</h1>
+        <button onclick="chooseCategory('biologi')">Biologi</button>
+        <button onclick="chooseCategory('matematika')">Matematika</button>
+    </div>
+    
+    <div class="quiz-container">
+        <h1>TEKA TEKI CERDAS</h1>
+        <p id="question"></p>
+        <div class="input-container">
+            <input type="text" id="answer" placeholder="Ketik jawaban Anda...">
+            <button onclick="submitAnswer()">Submit</button>
+        </div>
+        <p id="result"></p>
+        <button id="next" onclick="nextQuestion()" style="display: none;">Pertanyaan Selanjutnya</button>
+        <button id="back-to-menu" onclick="backToMenu()" style="display: none; background-color: #f44336;">Kembali ke Menu Awal</button>
+    </div>    
+    
+    <script src="script.js"></script>
+</body>
+</html>
